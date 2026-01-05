@@ -59,8 +59,12 @@ body {
 }
 
 .services li {
-  margin: 10px 0;
+  margin: 10px auto;
   font-size: 1.1rem;
+  background: white;
+  padding: 12px;
+  max-width: 300px;
+  border-radius: 8px;
 }
 
 .contact {
