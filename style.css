@@ -41,6 +41,9 @@ body {
   padding: 60px 20px;
   text-align: center;
 }
+.section p {
+  font-size: 1.05rem;
+}
 
 .section h2 {
   margin-bottom: 20px;
