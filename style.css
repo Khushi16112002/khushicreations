@@ -71,3 +71,7 @@ body {
   background: #222;
   color: white;
 }
+
+.section {
+  margin-bottom: 20px;
+}
