@@ -118,6 +118,22 @@ section + section:not(.why-us) {
   font-size: 14px;
   color: #666;
 }
+  /* Make project cards clickable */
+.project-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+/* Hover highlight effect */
+.project-link .service-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-link:hover .service-card {
+  transform: translateY(-8px);
+  box-shadow: 0 14px 30px rgba(111, 66, 193, 0.18);
+}
 
 /* Contact */
 #contact p a {
@@ -342,31 +358,29 @@ section a:hover {
   <p>Examples of the type of projects we build for clients.</p>
 
   <div class="services">
-   <div class="service-card">
-  <i class="fas fa-globe"></i>
-  <h3>Business Website</h3>
-  <p>
-    Sample responsive business website with WhatsApp enquiry and contact
-    integration.
-  </p>
-</div>
-
-    <div class="service-card">
-  <i class="fas fa-chart-line"></i>
-  <h3>Admin Dashboard</h3>
-  <p>
-    Sample admin panel design for managing users, data, and reports.
-  </p>
-</div>
-
-    <div class="service-card">
-  <i class="fas fa-database"></i>
-  <h3>Custom Management System</h3>
-  <p>
-    Sample system layout for managing records, payments, and users.
-  </p>
- </div>
+   <a href="#" class="project-link">
+  <div class="service-card">
+    <i class="fas fa-globe"></i>
+    <h3>Business Website</h3>
+    <p>Sample responsive business website with WhatsApp enquiry and contact integration.</p>
   </div>
+</a>
+
+    <a href="#" class="project-link">
+  <div class="service-card">
+    <i class="fas fa-chart-line"></i>
+    <h3>Admin Dashboard</h3>
+    <p>Sample admin panel design for managing users, data, and reports.</p>
+  </div>
+</a>
+
+   <a href="#" class="project-link">
+  <div class="service-card">
+    <i class="fas fa-database"></i>
+    <h3>Custom Management System</h3>
+    <p>Sample system layout for managing records, payments, and users.</p>
+  </div>
+</a>
 </section>
 
   <section class="why-us bg-soft">
