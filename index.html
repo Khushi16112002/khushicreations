@@ -208,6 +208,36 @@ section a:hover {
   p {
   margin-bottom: 10px;
 }
+  /* Social Icons */
+.social-connect {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+  margin-top: 15px;
+}
+
+.social-icons a {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: #f1ecf9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6f42c1;
+  font-size: 20px;
+  transition: 0.3s ease;
+}
+
+.social-icons a:hover {
+  background: #6f42c1;
+  color: #ffffff;
+}
 </style>
 </head>
 
@@ -335,17 +365,18 @@ section a:hover {
     </div>
   </div>
 </section>
-  <section>
+  <section class="social-connect">
   <h2>Connect With Us</h2>
-  <p>
-    <a href="https://www.instagram.com/khushicreations2026" target="_blank">
-      Instagram
+
+  <div class="social-icons">
+    <a href="https://www.instagram.com/khushicreations2026" target="_blank" aria-label="Instagram">
+      <i class="fab fa-instagram"></i>
     </a>
-    |
-    <a href="https://www.linkedin.com/in/khushishetty2002" target="_blank">
-      LinkedIn
+
+    <a href="https://www.linkedin.com/in/khushishetty2002" target="_blank" aria-label="LinkedIn">
+      <i class="fab fa-linkedin-in"></i>
     </a>
-  </p>
+  </div>
 </section>
 
 <section id="contact">
