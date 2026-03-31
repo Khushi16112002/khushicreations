@@ -22,7 +22,7 @@ body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
-  background: #fafafa;
+ background: #f4f6fb;
   color: #333;
   line-height: 1.6;
 }
@@ -30,7 +30,7 @@ body {
 /* Header */
 header {
   padding: 45px 20px;
-  background: linear-gradient(135deg, #6f42c1, #d63384);
+ background: linear-gradient(135deg, #4f46e5, #7c3aed);
   color: #ffffff;
   text-align: center;
 }
@@ -68,6 +68,7 @@ header p {
   text-decoration: none;
   font-weight: 500;
   transition: 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
 
 .header-btn:hover {
@@ -110,14 +111,16 @@ section + section:not(.why-us) {
 
 .service-card {
   background: #ffffff;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
-  transition: transform 0.3s ease;
+  padding: 28px;
+  border-radius: 16px;
+  border: 1px solid #e6e9f2;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  transition: all 0.35s ease;
 }
 
 .service-card:hover {
-  transform: translateY(-6px);
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.08);
 }
 
 .service-card h3 {
@@ -243,8 +246,9 @@ section a:hover {
 .why-card {
   background: #ffffff;
   padding: 25px;
-  border-radius: 12px;
-  box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+  border-radius: 16px;
+  border: 1px solid #e6e9f2;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
 }
   /* Why Choose Us card title color */
 .why-card h3 {
@@ -296,7 +300,7 @@ section a:hover {
 }
   /* Soft background section */
 .bg-soft {
-  background: #f7f5fb;
+  background: #eef2ff;
 }
   .why-card h3 i {
   margin-right: 6px;
