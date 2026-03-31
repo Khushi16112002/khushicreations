@@ -132,9 +132,16 @@ section + section:not(.why-us) {
 }
 
 /* Services */
-@media (max-width: 768px) {
   .services {
-    grid-template-columns: 1fr;  /* ✅ 1 per row in mobile */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+@media (max-width: 768px) {
+  .service-card {
+    flex: 1 1 100%;
+    max-width: 100%;
   }
 }
 .service-card {
@@ -152,6 +159,9 @@ section + section:not(.why-us) {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  flex: 0 1 260px;   /* ✅ ADD THIS */
+  max-width: 300px;  /* ✅ ADD THIS */
 }
 .service-card:hover {
   transform: translateY(-12px) scale(1.04);
@@ -259,12 +269,7 @@ section a:hover {
   section {
     padding: 30px 15px;
   }
-
-  .services {
-  grid-template-columns: repeat(2, 1fr);
-}
-
-  .service-card {
+   .service-card {
     padding: 22px;
   }
 
